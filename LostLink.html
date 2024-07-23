@@ -1,0 +1,73 @@
+<html><head>
+<title>LostLink - Reunite with Your Lost Items</title>
+<link rel="stylesheet" href="LostLink.css"/>
+</head>
+<body>
+  <header>
+    <h1>LostLink</h1>
+    <p>Reconnect with Your Lost Belongings</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#report-lost">Report Lost Item</a></li>
+      <li><a href="#upload-found">Upload Found Item</a></li>
+      <li><a href="#search">Search Items</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section id="home">
+      <h2>Welcome to LostLink</h2>
+      <p>Lost something important? Found an item that doesn't belong to you? LostLink is here to help! Our platform connects people who have lost items with those who have found them.</p>
+      <a href="#report-lost" class="btn">Report Lost Item</a>
+      <a href="#upload-found" class="btn">Upload Found Item</a>
+    </section>
+
+    <section id="report-lost">
+      <h2>Report a Lost Item</h2>
+      <form action="/report-lost" method="POST" enctype="multipart/form-data">
+        <input type="text" name="item_name" placeholder="Item Name" required>
+        <textarea name="description" placeholder="Detailed Description" required></textarea>
+        <input type="text" name="location" placeholder="Last Seen Location" required>
+        <input type="date" name="date_lost" required>
+        <input type="file" name="item_image" accept="image/*">
+        <input type="email" name="contact" placeholder="Your Email" required>
+        <input type="submit" value="Submit Report">
+      </form>
+    </section>
+
+    <section id="upload-found">
+      <h2>Upload a Found Item</h2>
+      <form action="/upload-found" method="POST" enctype="multipart/form-data">
+        <input type="text" name="item_name" placeholder="Item Name" required>
+        <textarea name="description" placeholder="Detailed Description" required></textarea>
+        <input type="text" name="location" placeholder="Found Location" required>
+        <input type="date" name="date_found" required>
+        <input type="file" name="item_image" accept="image/*" required>
+        <input type="email" name="contact" placeholder="Your Email" required>
+        <input type="submit" value="Upload Item">
+      </form>
+    </section>
+
+    <section id="search">
+      <h2>Search for Items</h2>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search for items...">
+      </div>
+      <div class="item-grid" id="item-grid">
+        <!-- Items will be dynamically added here -->
+      </div>
+    </section>
+  </div>
+
+  <div id="chat-container">
+    <div id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="Type your message...">
+  </div>
+
+  <script src="LostLink.js">
+  </script>
+</body>
+</html>
