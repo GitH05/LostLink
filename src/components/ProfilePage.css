@@ -1,0 +1,49 @@
+.ant-tab-parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ant-tabs-nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 20px 0 20px;
+  background-color: #eee;
+}
+
+.ant-tabs-tab {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.ant-tabs {
+  width: 98vw;
+}
+.ant-tabs-tab-btn {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.ant-tabs-tab-icon {
+  display: flex;
+  align-items: center;
+}
+
+.ant-descriptions-item-label,
+.ant-descriptions-row {
+  border: 2px solid;
+}
+
+.ant-descriptions-item-label span{
+  font-weight: bolder;
+  font-size: large;
+  color: black;
+}
+
+.ant-descriptions-item-content span{
+  font-weight: bold;
+}

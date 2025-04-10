@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    
+   
+    
+}
+ .aboutpage {
+    background-color: rgba(252, 131, 87, 0.329);
+    height: 260%;
+    padding-bottom: 3em;
+ }
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.tagline {
+    font-style: italic;
+    margin-top: 0.5em;
+}
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.team-member {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 1em;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.member-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(74, 144, 226, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1em;
+    box-sizing: border-box;
+    text-align: center;
+}
+.team-member:hover .member-details {
+    opacity: 1;
+}
+.member-details h3 {
+    margin-bottom: 0.5em;
+}
+.member-details p {
+    margin: 0.2em 0;
+    font-size: 0.9em;
+}
+.description {
+    max-width: 800px;
+    margin: auto auto ;
+   
+    padding: 2em;
+    background-color: rgba(255, 114, 63, 0.473);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.quote {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 1em;
+}
+.first-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.remaining-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

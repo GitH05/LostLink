@@ -1,0 +1,38 @@
+.dasclaimer {
+height: 70vh;
+width: 150vh;
+margin-top: 10%;
+margin-bottom: 10%;
+margin-left: 15%;
+margin-right: 15%;
+display: flex;
+flex-direction: column;
+justify-items: center;
+background-color: black;
+}
+.imagedisclaimer{
+ margin-left: auto;
+ margin-right: auto;
+  height: 300px;
+  width: 300px;
+  
+}
+.dasclaimertext {
+ 
+
+font-weight: bolder;
+width: auto;
+font-size:2rem;
+color: aqua;
+
+text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .dasclaimer .dasclaimertext {
+      width: 50vh;
+      
+      font-size: 2em;
+    }
+  }

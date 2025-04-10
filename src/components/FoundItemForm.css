@@ -1,0 +1,61 @@
+#itemform {
+    background: darkkhaki;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin: auto auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .inputfile, .dateinput {
+    /* width: auto; */
+    padding: 10px;
+    margin: 10px 0;
+    /* margin-left: -5% ; */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+   
+
+  .submitbutton {
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitbutton:hover {
+    background-color: #2980b9;
+  }
+
+.inputWithLabel{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 60%;
+
+
+}
+.inputWithLabel label{
+  width: 25%;
+  text-align: left;
+  /* background-color: red; */
+} 
+  
