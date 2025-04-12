@@ -15,7 +15,7 @@ setInterval(() => {
     return(
     <div className="dasclaimer">
         <img className='imagedisclaimer' src={Disclaimer} alt='disclaimer'/>
-        <h3 className="dasclaimertext">Claim your lost item within the Parul University campus only No outside claims allowed
+        <h3 className="dasclaimertext">Claim your lost item within the campus only No outside claims allowed
 
 </h3>
 
